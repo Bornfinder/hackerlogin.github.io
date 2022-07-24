@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1" id="" >
+        <div>
+            <button class="button" onclick="page()">LOGIN</button>
+            <button class="button">HOME</button>
+            <button class="button">ABOUT</button>
+            <button class="button">SERVICE</button>
+            <button class="button">NEWS</button>
+            <button class="button">CONTACT US</button>
+        </div>
+
+
+         
+    </div>
+    
+    <div class="d2">
+       
+     <h3 style="color: #84f019;">the gaining of unauthorized access to data in a system or computer is.</h3>
+     <div>
+         
+        <img src="/raw/text-1639318837331.png" alt="hacking" >
+     </div>
+        </div>
+        <div id="d3">
+          
+        <div id="d4">
+            <input type="text" placeholder="username" class="input">
+            <input type="password" placeholder="password" class="input"><br>
+            <button id="enter" class="button" onclick="runScript()" > ENTER</button>
+           
+        </div>
+        <div id="dreg" style="display: none;">
+            <input type="text" class="input" placeholder="@username">
+            <input type="text" class="input" placeholder="first name">
+            <input type="text" class="input" placeholder="last name">
+            <input type="email" class="input" placeholder="email id">
+            <input type="number" class="input" placeholder="phone number ">
+            <input type="password" class="input" placeholder="password">
+            
+        </div>
+
+         <label id="lst" style="color: rgb(0, 183, 255); font-style: oblique;"> don't have an account</label>
+         <button id="register" class="button" onclick="hide()"><p id="bname">Register</p></button>
+         <script>
+             function hide(){
+                let register = document.getElementById('register');
+                let d4 = document.getElementById('d4');
+                let dreg =document.getElementById('dreg');
+               
+                if(d4.style.display != 'none'){
+                d4.style.display='none';
+                dreg.style.display ='block';
+                document.getElementById("bname").innerHTML = "Login";
+                document.getElementById("lst").innerHTML = "already have an account";
+                }
+                else{
+                    d4.style.display='block';
+                    dreg.style.display ='none';
+                    document.getElementById("bname").innerHTML = "Register";
+                    document.getElementById("lst").innerHTML = "don't have an account";
+                }
+            }
+            </script>
+        
+    <div>
+        <div id="typed1" style="color:  rgb(255, 0, 0); white-space:pre; background-color: rgba(0, 0, 0, 0.571); margin-right: 30%;"></div>
+        <div id="typed6" style="color:  rgb(255, 0, 0); white-space:pre; background-color: rgba(0, 0, 0, 0.571); margin-right: 30%;"></div>
+            <script>
+                function runScript(){
+                    let enter =document.getElementById('enter'). innerHTML="succes";
+
+                }
+
+            </script>
+        <script src="/js/typed.js"></script>
+        <script src="/js/text.js"></script>
+    </div>
+    
+            
+    
+    <div>
+    <footer style=" color:rgb(0, 0, 0) ;">
+        code by Abdul Wajid
+    </footer>
+    </div>
+    
+</body>
+</html>

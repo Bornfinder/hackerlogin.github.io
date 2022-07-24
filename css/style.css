@@ -1,0 +1,102 @@
+.d1{
+    background-image: url('/raw/redback.jpg') ;
+    filter:sa(180%);
+    
+    max-width: 100%;
+
+    height: auto;
+    
+    padding-top: 2%;
+    display: flex;
+}
+.button{
+     background-color :rgb(128, 255, 0);
+    border: none;
+    color: rgb(255, 0, 0);
+    padding: 15px 32px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    backdrop-filter: blur(12px); 
+    
+}
+
+button{
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;   
+}
+
+button::before,button::after{
+    position: absolute;
+    contain: "";
+    z-index: -1;
+}
+/* .button:hover{
+    
+    color: rgb(255, 0, 0);
+    background-color: rgba(15, 238, 34, 0.075);
+    backdrop-filter: blur(3px);
+} */
+
+.button:hover{
+    color: rgb(0, 255, 0);
+    background: #ff0000;
+    box-shadow: 0 0 5px #ff0037,  0 0 25px #ff0037, 0 0 50px #ff0037, 0 0 200px #ff0037,;
+}
+
+
+.d2{
+    background-image: url('/raw/redback.jpg');
+    max-width: 100%;
+    height: 100px;
+    padding-top: 5%;
+    padding-left: 10%;  
+}
+
+
+#list1{
+    display: flex;
+    padding: 40px;
+}
+#d3{
+    background-image: url('/raw/greenback.jpg');
+    max-width: 100%;
+    height: 650px;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+#fakecommand{
+    color: red;
+    
+}
+#d4{
+    padding-top: 30pt;
+}
+.input{
+    margin: 5px;
+    font-size: 2.5rem;
+    color: chartreuse;
+    background: transparent;
+    caret-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: red;
+    border-width: 4px;
+    border-top: transparent;
+    border-radius: 20px ;
+    padding: 7px 2px;
+    backdrop-filter: blur(12px);
+
+}
+.input::placeholder{
+    color:chartreuse;
+}
+#in1{
+    font-size: 1.5rem;
+    border-color: green;
+}
