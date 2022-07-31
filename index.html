@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
     <style>
         *{
             padding: 0px;
@@ -16,13 +21,15 @@
 
 <body>
     <div class="d1" id="" >
+        <input type="button" value="PLAY" onclick="play()">
+        <audio id="audio" src="/raw/depositphotos_425299462-track-telemetry-electronic-computer-signal-sound.mp3"></audio>
         <div>
-            <button class="button" onclick="page()">LOGIN</button>
-            <button class="button">HOME</button>
-            <button class="button">ABOUT</button>
-            <button class="button">SERVICE</button>
-            <button class="button">NEWS</button>
-            <button class="button">CONTACT US</button>
+            <button class="button"  value="play" onclick="play()"  onclick="page()">LOGIN</button>
+            <button class="button" value="play" onclick="play()" >HOME</button>
+            <button class="button" value="play" onclick="play()" >ABOUT</button>
+            <button class="button" value="play" onclick="play()" >SERVICE</button>
+            <button class="button" value="play" onclick="play()" >NEWS</button>
+            <button class="button" value="play" onclick="play()" >CONTACT US</button>
         </div>
 
 
@@ -91,15 +98,7 @@
         <script src="js/typed.js"></script>
         <script src="js/text.js"></script>
     </div>
-            <script type="text/javascript">
-    const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
-    const buttons = document.querySelectorAll("button");
-    
-    buttons.forEach(button => {
-      button.addEventListener("click", () => {
-        audio.play();
-      });
-    });
+           
     
             
     
